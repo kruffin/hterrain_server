@@ -19,6 +19,8 @@ RUN ln -s /Godot_v${GODOT_VERSION}-stable_mono_linux_server_64/Godot_v${GODOT_VE
 
 WORKDIR /app
 COPY godot_files .
+RUN mkdir -p .builds
+
 #WORKDIR /app/godot_files/addon_src/godot_heightmap_plugin/addons/zylann.hterrain/native/godot_cpp
 #RUN scons platform=linux generate_bindings=yes target=release
 #WORKDIR /app/godot_files/addon_src/godot_heightmap_plugin/addons/zylann.hterrain/native
