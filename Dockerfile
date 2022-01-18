@@ -29,4 +29,4 @@ COPY godot_files .
 #RUN cp -r /app/godot_files/addon_src/godot_heightmap_plugin/addons/zylann.hterrain /app/godot_files/addons/.
 
 RUN godot-headless --path . --export-pack "Linux_Server" ./.builds/hterrain_server.pck
-CMD ["godot", "--main-pack", "/app/godot_files/.builds/hterrain_server.pck"]
+CMD ["godot", "--main-pack", "/app/.builds/hterrain_server.pck"]
