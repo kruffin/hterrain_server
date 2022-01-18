@@ -4,7 +4,7 @@ Illustrate an issue with the heightmap plugin (https://github.com/Zylann/godot_h
 ## Running
 Easy way is with docker and docker-compose.
 
-    docker-compose build .
+    docker-compose build
     docker-compose up
 
 ## Result
