@@ -41,6 +41,8 @@ RUN mv templates /root/.local/share/godot/templates/${GODOT_VERSION}.stable
 
 WORKDIR /app
 COPY godot_files .
+RUN mkdir -p .builds
+
 #WORKDIR /app/godot_files/addon_src/godot_heightmap_plugin/addons/zylann.hterrain/native/godot_cpp
 #RUN scons platform=linux generate_bindings=yes target=release
 #WORKDIR /app/godot_files/addon_src/godot_heightmap_plugin/addons/zylann.hterrain/native
